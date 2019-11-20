@@ -115,16 +115,3 @@ char * split( char * a )
 	}
 	return res;
 }
-int main()
-{
- char *a = "Keshav";
- char *b = "Gupta Kesh ava";
- char *c = (char *)malloc(sizeof(char)*100);
- c = split(b);
- while( c!= '\0')
- {
- 	printf("%s\n",c);
- 	c = split(NULL);
- }
- return 0;
-}
