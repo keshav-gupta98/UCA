@@ -92,22 +92,7 @@ char * strstring(char *a, char *b)
 	return NULL; 	
 }
 
-char * strchar( char *a, char c )					// wrong output when char not found
-{
-	int i = 0;
-	char *b = ( char * )malloc( sizeof( char ) * strlength( a ) );
-	b = a;	
-	while( b )
-	{
-		if( a[ i ] == c )
-		{
-			return b;
-		}
-		b++;
-		i++;
-	}
-	return b;
-}
+
 
 char * split( char * a )
 {
