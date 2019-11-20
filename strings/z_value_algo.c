@@ -1,11 +1,4 @@
-/******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
-*******************************************************************************/
+// It will return the starting index of b in string if it b is a substring a
 #include <stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -14,7 +7,8 @@ int * func( char *c )
     int left = 0;
     int right = 0;
     int *z = (int *)malloc(sizeof( int )*strlen( c ));
-    for( int k = 1; k < strlen(c) ; k++ )
+    int k = 1;
+    for(  k = 1; k < strlen(c) ; k++ )
     {
         if( k > right )
         {
@@ -54,7 +48,8 @@ int main()
     c= strcat(b,a);
     int *arr = (int *)malloc(sizeof(int)*strlen(c));
     arr = func(c);
-    for( int i = 0; i < strlen(c);i++)
+    int i  =0;
+    for( i = 0; i < strlen(c);i++)
     {
         if( arr[i] == size )
         printf("%d ", i - size -1);

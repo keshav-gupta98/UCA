@@ -1,3 +1,4 @@
+// It will return the starting index of b in string if it b is a substring a
 #include <stdio.h>
 #include<string.h>
 #include<stdlib.h>

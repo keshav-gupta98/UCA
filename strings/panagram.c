@@ -1,3 +1,4 @@
+// A string is called a panagram if it containsa all alphabets[a-z] in it.
 #include <math.h>
 #include <stdio.h>
 #include <string.h>
